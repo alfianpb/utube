@@ -2,7 +2,9 @@
 class Messages:
 
     START_MSG = "Hi there {}.\n\nI'm Youtube Uploader Bot.You can use me to upload any telegram video to youtube once you authorise me.You can know more from /help.\n\nThank you."
-
+    
+    LOGIN_MSG = "Silahkan Ambil Token Login, Lalu\n/authorise token-login
+    
     HELP_MSG = [
         ".",
         "Hi there.\n\nFirst things first. You should be aware that youtube processes each and every video uploaded, and its AI is amazing that it flags the video for copyrights if it finds copywrited content as soon as its uploaded, and you will not be able to publish the video.\n\nRead through all the pages to know how I work.",
