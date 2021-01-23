@@ -9,8 +9,11 @@ from ..utubebot import UtubeBot
 
 def map_btns(pos):
     if pos == 1:
+        auth = GoogleAuth(Config.CLIENT_ID, Config.CLIENT_SECRET)
+        url = auth.GetAuthUrl()
         button = [
             [InlineKeyboardButton(text = '-->', callback_data = "help+2")]
+            [InlineKeyboardButton(text = 'Authentication URL', url = url)]
         ]
     elif pos == len(tr.HELP_MSG)-1:
         auth = GoogleAuth(Config.CLIENT_ID, Config.CLIENT_SECRET)
