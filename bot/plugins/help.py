@@ -9,11 +9,8 @@ from ..utubebot import UtubeBot
 
 def map_btns(pos):
     if pos == 1:
-        auth = GoogleAuth(Config.CLIENT_ID, Config.CLIENT_SECRET)
-        url = auth.GetAuthUrl()
         button = [
             [InlineKeyboardButton(text = '-->', callback_data = "help+2")]
-            [InlineKeyboardButton(text = 'Authentication URL', url = url)]
         ]
     elif pos == len(tr.HELP_MSG)-1:
         auth = GoogleAuth(Config.CLIENT_ID, Config.CLIENT_SECRET)
@@ -30,6 +27,28 @@ def map_btns(pos):
             ],
         ]
     return button
+
+@UtubeBot.on_message(
+    Filters.private 
+    & Filters.incoming
+    & Filters.command('login')
+    & Filters.user(Config.AUTH_USERS)
+)
+async def _login(c, m):
+    auth = GoogleAuth(Config.CLIENT_ID, Config.CLIENT_SECRET)
+    url = auth.GetAuthUrl()
+    await m.reply_chat_action("typing")
+    await m.reply_text(
+        text=tr.START_MSG.format(m.from_user.first_name),
+        quote=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(text = 'Authentication URL', url = url)
+                ]
+            ]
+        )
+    )
 
 
 @UtubeBot.on_message(
