@@ -39,7 +39,7 @@ async def _login(c, m):
     url = auth.GetAuthUrl()
     await m.reply_chat_action("typing")
     await m.reply_text(
-        text=tr.START_MSG.format(m.from_user.first_name),
+        text=tr.LOGIN_MSG.format(m.from_user.first_name),
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
