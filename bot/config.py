@@ -4,31 +4,29 @@ class Config:
 
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
     
-    SESSION_NAME = os.environ.get("SESSION_NAME", 'youtubeitbot')
+    SESSION_NAME = "alfianytupload"
 
-    API_ID = int(os.environ.get("API_ID"))
+    API_ID = "2030112"
 
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = "0bc033cdc59296e1906d6562a7295d67"
 
     CLIENT_ID = os.environ.get("CLIENT_ID")
 
     CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
 
-    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
-    
-    AUTH_USERS_TEXT = os.environ.get("AUTH_USERS", '')
+    BOT_OWNER = "1477145315"
 
-    AUTH_USERS = [BOT_OWNER, 374321319] + ([int(user.strip()) for user in AUTH_USERS_TEXT.split(",")] if AUTH_USERS_TEXT else [])
+    AUTH_USERS = [BOT_OWNER, 952774613]
     
-    VIDEO_DESCRIPTION = os.environ.get("VIDEO_DESCRIPTION", '').replace('<', '').replace('>', '')
+    VIDEO_DESCRIPTION = ""
     
-    VIDEO_CATEGORY = int(os.environ.get("VIDEO_CATEGORY")) if os.environ.get("VIDEO_CATEGORY") else 0
+    VIDEO_CATEGORY = "0"
     
-    VIDEO_TITLE_PREFIX = os.environ.get("VIDEO_TITLE_PREFIX", '')
+    VIDEO_TITLE_PREFIX = ""
     
-    VIDEO_TITLE_SUFFIX = os.environ.get("VIDEO_TITLE_SUFFIX", '')
+    VIDEO_TITLE_SUFFIX = ""
     
-    DEBUG = bool(os.environ.get("DEBUG"))
+    DEBUG = bool("")
     
     UPLOAD_MODE = os.environ.get("UPLOAD_MODE") or False
     if UPLOAD_MODE:
