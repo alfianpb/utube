@@ -9,19 +9,6 @@
       "description": "Your Bot token. Get from https://t.me/botfather",
       "value": ""
     },
-    "SESSION_NAME": {
-      "description": "Your Bot's username.",
-      "value": "alfianytupload",
-      "required":false
-    },
-    "API_ID": {
-      "description": "Your API_ID.  Refer project docs.",
-      "value": "2030112"
-    },
-    "API_HASH": {
-      "description": "Your API_ID. Refer project docs.",
-      "value": "0bc033cdc59296e1906d6562a7295d67"
-    },
     "CLIENT_ID": {
       "description": "Your Google CLIENT_ID. Refer project docs.",
       "value": ""
@@ -30,43 +17,9 @@
       "description": "Your Google CLIENT_SECRET. Refer project docs.",
       "value": ""
     },
-    "BOT_OWNER": {
-      "description": "Telegram id of the bot owner.",
-      "value": "1477145315"
-    },
-    "AUTH_USERS": {
-      "description": "Telegram id of authorised users, separated by comma",
-      "value": "1477145315,952774613",
-      "required":false
-    },
-    "VIDEO_DESCRIPTION": {
-      "description": "Any default description to be aded to the video.",
-      "value": "",
-      "required":false
-    },
-    "VIDEO_CATEGORY": {
-      "description": "YouTube's video category id.",
-      "value": "",
-      "required":false
-    },
-    "VIDEO_TITLE_PREFIX": {
-      "description": "Any prefix to be added to the video's title.",
-      "value": "",
-      "required":false
-    },
-    "VIDEO_TITLE_SUFFIX": {
-      "description": "Any suffix to be added to the video's title.",
-      "value": "",
-      "required":false
-    },
     "UPLOAD_MODE": {
       "description": "The video's privacy status. Valid values for this property are: private, public, unlisted",
       "value": "private",
-      "required":false
-    },
-    "DEBUG": {
-      "description": "Pass any value to set logging to debug level.",
-      "value": "",
       "required":false
     }
    },
