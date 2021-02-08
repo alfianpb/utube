@@ -3,7 +3,7 @@ class Messages:
 
     START_MSG = "Hi there {}.\n\nI'm Youtube Uploader Bot.You can use me to upload any telegram video to youtube once you authorise me.You can know more from /help.\n\nThank you."
     
-    LOGIN_MSG = "Hallo {}.\n\nSilahkan Ambil Token Login, Lalu\n/authorise token-login"
+    LOGIN_MSG = "Hallo {}.\n\nSilahkan Ambil Token Login, Lalu\n/auth token-login\n\nTerima Kasih."
     
     HELP_MSG = [
         ".",
